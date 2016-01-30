@@ -7,16 +7,7 @@ import {HeroService} from './hero.service';
 
 @Component({
     selector: 'my-app',
-    template: `<h1>{{title}}</h1>
-    	<h2>My Heroes</h2>
-    	<ul class="heroes">
-    		<li *ngFor="#hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
-    			<span class="badge">{{hero.id}}</span> {{hero.name}}
-    		</li>
-    	</ul>
-
-    	<hero-detail [hero]="selectedHero"></hero-detail>
-    	`,
+    templateUrl: 'app/app.html',
 	styles:[`
 	  .selected {
 	    background-color: #CFD8DC !important;
